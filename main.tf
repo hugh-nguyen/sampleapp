@@ -8,7 +8,7 @@ variable "aws_access_secret" {
 
 provider "aws" {
   access_key = var.aws_access_key
-  secret_access_key = var.aws_access_secret
+  secret_key = var.aws_access_secret
   region = "ap-southeast-2"
 }
 
