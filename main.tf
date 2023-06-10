@@ -41,7 +41,7 @@ resource "aws_security_group" "web_sg" {
 resource "aws_instance" "web_instance" {
   ami           = "ami-0c94855ba95c71c99"
   instance_type = "t3.micro"
-  security_groups = aws_security_group.web_sg.id
+  security_groups = [aws_security_group.web_sg.id]
 
   tags = {
     Name = "web-app-instance"
